@@ -3,60 +3,18 @@ Biomedical engineering - miniproject - data exploration
 
 ## Project Overview
 
-Welcome to the Data Exploration miniproject. You will learn how to clean and prepare data and build a pipeline that can be used for further exploration. The goal is that by completing this lab, you understand the first stage of data processing pipeline.
+This is the **Data exploration** project. It deals with the big amount of data connected to the global terrorism and ties to find the aswers of 5 questions:
+* In which year was the highest number of acts of terrorism recorded?
+* Which country was the most dangerous from 2013 through 2017?
+* What type of weapon was the most common in 2017? Was it different than in 2000, 1980? 
+* How many people died or was hurt each year in the terrorism attact?
+* How has terrorism spread in Middle East and North Africa?
+
+The Global Terrorism Database (GTD) is an open-source database including information on terrorist attacks around the world from 1970 through 2017. The GTD includes systematic data on domestic as well as international terrorist incidents that have occurred during this time period and now includes more than 180,000 attacks. The database is maintained by researchers at the National Consortium for the Study of Terrorism and Responses to Terrorism (START), headquartered at the University of Maryland.
 
 ## Project Instructions
 
-0. (Optional step) Fork the repository to your githab account. It allows you to upload the changes to your own github
+1. Download data set, Global Terrorism Database, from https://www.kaggle.com/START-UMD/gtd
+   Save that csv file in the folder of project on your local maschine.
 
-1. Clean all the previous copies of this repo (it could be downloaded by other students).
-
-    ```
-    cd
-    ls -all
-    rm -rf bme-*
-    ```
-
-2. Clone the repository to your local PC
-
-    Go to your home directory, and clone the repository. In case you made a copy (fork) provide your own URL
-    ```
-    cd
-    git clone https://github.com/tstokrk/bme-data-exp.git
-    cd bme-data-exp
-    ```
-
-3. (Optional step) Create a new conda environment.
-
-    If you're using mini conda this step help you tune the the necessary Python packages.
-
-    All necessary packages are listed in requirements.yml file, that defines dataexp env.
-
-    Before you create the new dataexp env using conda, check if there is no different
-    env with the same name on your PC. Remove all env that can create a conflict with the new one
-
-    ```
-    conda env list
-    conda env remove --name dataexp
-    ```
-
-    Create the new env using the package list from the provided file
-
-    ```
-    conda env create -f requirements.yml
-    source activate dataexp
-    ```
-
-
-4. Open the Jupyter Notebook and follow the instructions
-	
-    ```
-    jupyter notebook dataexp.ipynb
-    ```
-  
-5. (Optional step) Commit and push all the changes to your own github repo 
-
-    ```
-    git commit -m "My update.."
-    git push origin master
-    ```
+2. Import libaries: pandas, numpy, import, matplotlib.pyplot, seaborn.
